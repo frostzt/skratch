@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // src/__mocks__/webextension-polyfill-ts
 // Update this file to include any mocks for the `webextension-polyfill-ts` package
 // This is used to mock these values for Storybook so you can develop your components
@@ -13,7 +15,7 @@ export const browser: any = {
         },
     },
     runtime: {
-        sendMessage: (params: { popupMounted: boolean }) => {
+        sendMessage: (params: { mainMounted: boolean }) => {
             return;
         },
     },

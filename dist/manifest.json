@@ -3,13 +3,12 @@
     "name": "Skratch",
     "description": "Maybe a Skratchpad",
     "version": "1.0.0",
-    "browser_action": {
+    "action": {
         "default_icon": "icon-16.png",
         "default_popup": "extension.html"
     },
     "background": {
-        "scripts": ["js/backgroundPage.js"],
-        "persistent": false
+        "service_worker": "js/backgroundPage.js"
     },
     "icons": {
         "16": "icon-16.png",

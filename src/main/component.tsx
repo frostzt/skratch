@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { browser } from "webextension-polyfill-ts";
-import css from "./styles.module.css";
 
 export const Main: React.FC = () => {
     // Sends the `mainMounted` event
@@ -10,7 +9,7 @@ export const Main: React.FC = () => {
 
     // Renders the component tree
     return (
-        <div className={css.popupContainer}>
+        <div>
             <div className="mx-4 my-4"></div>
         </div>
     );
